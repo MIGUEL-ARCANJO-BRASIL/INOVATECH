@@ -1,0 +1,13 @@
+
+.btn{
+    background-color: white; /* Cor inicial do botão */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+.btn:hover{
+    background-color: rgb(207, 205, 205) ;
+    border-radius: 10rem;
+    border: 10rem;
+}

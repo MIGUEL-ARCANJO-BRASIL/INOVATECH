@@ -1,0 +1,33 @@
+@import "styles/mixins/padding.scss";
+@import "styles/mixins/colors.scss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.container{
+  margin-top: 9rem;
+  font-family: "Inter",sans-serif;
+}
+
+.text {
+  @include Padding;
+  display: flex;
+
+  h1 {
+    font-weight: bold;
+    font-size: 60px;
+    color: $dark-green ;
+    height: 3rem;
+  }
+
+  p {
+    font-size: 27px;
+    opacity: 0.8;
+    height: 475px;
+    width: 80%;
+    text-align: justify;
+  }
+}
+
+.msg{
+  display: flex;
+  flex-wrap: wrap;
+}
