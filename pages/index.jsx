@@ -9,6 +9,10 @@ import Image from "next/image";
 import Styles from "./Home.module.scss";
 import AboutUs from "../components/about_us";
 
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-fade'
+
 export default function Home() {
   const featuresRef = useRef(null);
 

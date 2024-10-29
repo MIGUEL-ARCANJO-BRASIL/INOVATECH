@@ -5,6 +5,7 @@
 .container{
   margin-top: 9rem;
   font-family: "Inter",sans-serif;
+
 }
 
 .text {
@@ -30,4 +31,14 @@
 .msg{
   display: flex;
   flex-wrap: wrap;
+}
+
+.slider{
+  width: 50%;
+
+}
+
+.swiper-pagination-bullet{
+  background-color: #4caf50; /* Cor padrão da bolinha */
+  opacity: 1; /* Deixa a bolinha visível */
 }

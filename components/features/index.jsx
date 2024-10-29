@@ -3,6 +3,8 @@ import Image from "next/image";
 import RecicleImage from "/public/images/recicle_icon.png";
 import TrashImage from "/public/images/recycle-bin.png";
 import PlasticImage from "/public/images/plastic.png";
+
+
 const Features = () => {
     return (
         <div className={Styles.container}>
@@ -14,14 +16,18 @@ const Features = () => {
                     </h1>
                     <p>Reciclar ajuda a reduzir a quantidade de lixo nos aterros e conserva recursos naturais.
                         Pequenas ações, como separar o lixo, podem ter um grande impacto no meio ambiente.</p>
-                    <button>
+                    
+                    <button onClick={{}}>
                         CLIQUE AQUI
                     </button>
 
                 </div>
 
-                <div className={Styles.image1}>
-                    <Image src={RecicleImage} width={250} height={250} />
+                <div className={Styles.image1} >
+                    
+                        <Image src={RecicleImage} width={250} height={250} />
+
+                    
                 </div>
             </div>
 
@@ -33,7 +39,7 @@ const Features = () => {
                     </h1>
                     <p>Cada item que jogamos fora é um recurso desperdiçado.
                         Reduzir, reutilizar e reciclar são maneiras eficazes de minimizar o desperdício e preservar o planeta.</p>
-                    <button style={{ background: "#DE5E96" }}>
+                    <button onClick ={{}}>
                         CLIQUE AQUI
                     </button>
 
@@ -52,7 +58,7 @@ const Features = () => {
                     </h1>
                     <p>O plástico demora centenas de anos para se decompor.
                         Substituir itens descartáveis por alternativas reutilizáveis é uma forma de reduzir o impacto no meio ambiente.</p>
-                    <button style={{ background: "#FF525D" }}>
+                    <button >
                         CLIQUE AQUI
                     </button>
                 </div>

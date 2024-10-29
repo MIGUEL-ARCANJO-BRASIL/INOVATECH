@@ -5,9 +5,9 @@
 .container {
     @include Padding;
     margin-top: 8rem;
-    
-    font-family: "Inter",sans-serif;
-    
+
+    font-family: "Inter", sans-serif;
+
     h1 {
         font-size: 60px;
         color: $dark-green;
@@ -21,8 +21,8 @@
         height: 50%;
         text-align: justify;
     }
-    button{
-        background-color: $dark-green;
+
+    button {
         width: 275px;
         height: 67px;
         border-radius: 30px;
@@ -31,43 +31,70 @@
         font-size: 17px;
         font-weight: bold;
     }
+
 }
 
-.containerInfo1{
+.containerInfo1 {
     display: flex;
-    
+
+    button {
+        background-color: $dark-green;
+    }
+
+    button:hover {
+        background-color: #4da551;
+    }
 }
-.text1{
+
+.text1 {
     width: 60%;
 }
 
-.image1{
+.image1 {
     margin: auto;
 }
 
 
-.containerInfo2{
+.containerInfo2 {
     margin-top: 8rem;
     display: flex;
     flex-direction: row-reverse;
+
+    button {
+        background-color: $pink;
+    }
+
+    button:hover {
+        background-color: #b9497a;
+    }
 }
-.text2{
+
+.text2 {
     width: 60%;
 }
 
-.image2{
+.image2 {
     margin: auto;
 }
 
-.containerInfo3{
+.containerInfo3 {
     margin-top: 8rem;
+
     display: flex;
+
+    button {
+
+        background-color: $red;
+    }
+    button:hover{
+        background-color: #f06069;
+    }
 }
-.text3{
+
+.text3 {
     width: 60%;
 }
 
-.image3{
+.image3 {
     margin: auto;
 }
-
