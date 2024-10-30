@@ -34,67 +34,8 @@
 
 }
 
-.containerInfo1 {
-    display: flex;
-
-    button {
-        background-color: $dark-green;
+.modal{
+    h1{
+        font-size: 10px;
     }
-
-    button:hover {
-        background-color: #4da551;
-    }
-}
-
-.text1 {
-    width: 60%;
-}
-
-.image1 {
-    margin: auto;
-}
-
-
-.containerInfo2 {
-    margin-top: 8rem;
-    display: flex;
-    flex-direction: row-reverse;
-
-    button {
-        background-color: $pink;
-    }
-
-    button:hover {
-        background-color: #b9497a;
-    }
-}
-
-.text2 {
-    width: 60%;
-}
-
-.image2 {
-    margin: auto;
-}
-
-.containerInfo3 {
-    margin-top: 8rem;
-
-    display: flex;
-
-    button {
-
-        background-color: $red;
-    }
-    button:hover{
-        background-color: #f06069;
-    }
-}
-
-.text3 {
-    width: 60%;
-}
-
-.image3 {
-    margin: auto;
 }
