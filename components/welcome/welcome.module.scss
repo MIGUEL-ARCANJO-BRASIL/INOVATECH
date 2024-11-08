@@ -5,26 +5,27 @@
 .container {
   margin-top: 9rem;
   font-family: "Inter", sans-serif;
-  
 }
 
 .text {
   @include Padding;
   display: flex;
 
-
   h1 {
     font-weight: bold;
-    font-size: 60px;
+
     color: $dark-green ;
-    height: 3rem;
+    min-width: 20rem;
+    font-size: clamp(40px, 5vw, 60px);
   }
 
   p {
-    font-size: 27px;
+    // font-size: 27px;
+    font-size: clamp(20px, 5vw, 27px);
     opacity: 0.8;
     margin-bottom: 3rem;
     width: 90%;
+    min-width: 20rem;
     text-align: justify;
   }
 
@@ -37,27 +38,14 @@
     color: $white-color;
     font-size: 17px;
     font-weight: bold;
+    margin-left: auto;
     margin-bottom: 11.25rem;
   }
 }
 
 .slider {
 
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-}
-
-
-.swiper-pagination-bullet {
-  background-color: #4caf50;
-  /* Cor padrão da bolinha */
-  opacity: 1;
-  /* Deixa a bolinha visível */
-}
-
-.separator {
-  height: 4px; /* Altura da barra */
-  background-color: #388E3C; /* Cor da barra */
-  margin: 5rem 0; /* Margem acima e abaixo da barra */
-  width: 100%; /* Largura total */
+  // background-color: #bcbbbb;
 }

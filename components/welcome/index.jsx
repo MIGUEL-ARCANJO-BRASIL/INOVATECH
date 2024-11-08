@@ -4,7 +4,7 @@ import Styles from "./welcome.module.scss";
 import Image from "next/image";
 
 import { SwiperSlide } from "swiper/react";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Autoplay, Pagination, Navigation, EffectCards } from 'swiper/modules';
 import Environment from "/public/images/environment.svg";
 import { useRouter } from 'next/router';
@@ -29,7 +29,7 @@ const Welcome = () => {
 
     <div className={Styles.container}>
       <div className={Styles.text}>
-        <div style={{ width: "60%" }}>
+        <div style={{ width: "50%", minWidth: "40%", minHeight: "40%"}}>
           <h1>Bem-vindo!</h1>
           <p>
             Inspire-se a viver de forma sustentável.
@@ -40,15 +40,15 @@ const Welcome = () => {
           </button>
         </div>
 
-        <div style={{ width: '22rem', marginLeft: '10rem' }}>
+        <div style={{ width: '22rem', marginLeft: '10rem', minWidth: '10rem' }}>
           <Image src={Environment} />
         </div>
 
       </div>
 
       <div className={Styles.slider}>
-        <Swiper
-          modules={[Autoplay, Navigation, EffectCards]}
+        <Swiper style={{ width: '90%' }}
+          modules={[Autoplay, Navigation, EffectCards, Pagination]}
           effect="cards"
           autoplay={{ delay: 2500, disableOnInteraction: false }}
           loop
@@ -59,14 +59,15 @@ const Welcome = () => {
           {
             data.map((item) => (
               <SwiperSlide key={item.id} style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
-                <img src={item.image} alt="Slider" className="slide-item" style={{ width: '90%', height: '38rem', }} />
+                <img src={item.image} alt="Slider" className="slide-item" style={{ width: '60%' }} />
               </SwiperSlide>
             ))
           }
         </Swiper>
 
       </div>
-      <div className={Styles.separator}></div>
+
+
     </div>
   );
 };

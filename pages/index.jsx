@@ -8,7 +8,9 @@ import AboutUs from "../components/about_us";
 
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 import 'swiper/css/effect-fade'
+import Separator from "../components/auxiliars/separator";
 
 
 
@@ -18,9 +20,14 @@ export default function Home() {
     <div className={styles.container}>
       <Header />
       <Welcome />
+
+      <Separator />
+
       <Features />
+      <Separator />
+
       <AboutUs />
-   
+
     </div>
   );
 }

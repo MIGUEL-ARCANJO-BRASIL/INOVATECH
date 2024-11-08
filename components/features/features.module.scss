@@ -9,22 +9,25 @@
     font-family: "Inter", sans-serif;
 
     h1 {
-        font-size: 60px;
+        font-size: clamp(30px,5vw,60px);
         color: $dark-green;
     }
 
     p {
-        font-size: 27px;
+        font-size: clamp(17px,5vw,35px);
         opacity: 0.8;
         height: 475px;
         width: 80%;
-        height: 50%;
+        height: 25rem;
         text-align: justify;
     }
 
     button {
-        width: 275px;
-        height: 67px;
+        // width: 275px;
+        // height: 67px;
+
+        width: clamp(200px, 275px, 275px);
+        height: clamp(50px, 67px, 67px);
         border-radius: 30px;
         border: none;
         color: $white-color;

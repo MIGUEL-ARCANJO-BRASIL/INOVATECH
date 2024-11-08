@@ -3,7 +3,7 @@ import Styles from '../cards_info/cards.module.scss';
 import Modal from '../modal/card_modal';
 import { useState } from 'react';
 
-const CardsInfo = ({ title, text, image, reverse, buttonColor }) => {
+const CardsInfo = ({ title, text, image, reverse, buttonColor, cardtitle, cardtext }) => {
 
     const [openModal, setOpenModal] = useState(false);
 
@@ -20,13 +20,13 @@ const CardsInfo = ({ title, text, image, reverse, buttonColor }) => {
                 </button>
 
                 <div>
-                    <Modal isOpen={openModal} setModalOpen={()=> setOpenModal(!openModal)}/>
-                        
+                    <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)} text={cardtext} title={cardtitle} />
+
                 </div>
             </div>
 
             <div className={Styles.image}>
-                <Image src={image} width={250} height={250} />
+                <Image src={image} width={350} height={350} minHeight={200} minWidth={200} />
             </div>
         </div>
 
