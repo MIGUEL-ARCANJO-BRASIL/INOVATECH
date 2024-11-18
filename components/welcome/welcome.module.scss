@@ -13,15 +13,14 @@
 
   h1 {
     font-weight: bold;
-
     color: $dark-green ;
     min-width: 20rem;
-    font-size: clamp(40px, 5vw, 60px);
+    font-size: 60px
   }
 
   p {
     // font-size: 27px;
-    font-size: clamp(20px, 5vw, 27px);
+    font-size: 27px;
     opacity: 0.8;
     margin-bottom: 3rem;
     width: 90%;
@@ -43,9 +42,41 @@
   }
 }
 
+.image {
+  margin: 0 auto;
+
+}
+
 .slider {
 
   width: 100%;
   margin: 0 auto;
   // background-color: #bcbbbb;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    margin-top: 5rem;
+  }
+
+  .text {
+    @include PaddingMobile;
+
+    h1 {
+      font-size: 40px;
+    }
+
+    p {
+      font-size: 20px;
+    }
+
+
+  }
+
+  .image {
+    width: 200px;
+    margin: 0 auto;
+  }
+
+
 }

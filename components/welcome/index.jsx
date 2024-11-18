@@ -29,7 +29,7 @@ const Welcome = () => {
 
     <div className={Styles.container}>
       <div className={Styles.text}>
-        <div style={{ width: "50%", minWidth: "40%", minHeight: "40%"}}>
+        <div style={{ width: "50%", minWidth: "40%", minHeight: "40%" }}>
           <h1>Bem-vindo!</h1>
           <p>
             Inspire-se a viver de forma sustentável.
@@ -39,9 +39,8 @@ const Welcome = () => {
             Saiba Mais
           </button>
         </div>
-
-        <div style={{ width: '22rem', marginLeft: '10rem', minWidth: '10rem' }}>
-          <Image src={Environment} />
+        <div className={Styles.image}>
+          <Image src={Environment} width={400} height={400} />
         </div>
 
       </div>

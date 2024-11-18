@@ -1,4 +1,5 @@
 @import "/styles/mixins/colors.scss";
+@import "/styles/mixins/padding.scss";
 
 .container {
   max-width: 2440px;
@@ -6,22 +7,32 @@
   width: 100%;
   background-color: $light-green;
   border-bottom: 0.5px solid;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   align-items: center;
-  justify-content: space-between;
+  display: flex;
+  justify-content: space-around;
+  
 }
 
 .menu {
-  font-size: clamp(10px,22px,22px);
+  font-size: 22px;
   font-weight: 500;
 
   a+a {
-    margin-left: 38.9px;
+    margin-left: 60px;
   }
 }
 
-.action {
-  text-align: end;
-  color: $white-color;
+@media screen and (max-width: 768px) {
+  .container {
+    @include PaddingMobile
+  }
+
+  .menu {
+    font-size: 15px;
+    width: 18rem;
+
+    a+a {
+      margin-left: 20px;
+    }
+  }
 }

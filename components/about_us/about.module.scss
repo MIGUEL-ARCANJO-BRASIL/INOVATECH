@@ -1,11 +1,11 @@
 @import "/styles/mixins/padding.scss";
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-.container{
+.container {
     @include Padding;
     margin-top: 8rem;
     height: 408px;
-    width: 90%;
+    width: 75%;
     background-color: #2CB3CD;
     display: flex;
     border-top-right-radius: 10rem;
@@ -14,24 +14,43 @@
 
 }
 
-.mensage{
-    
+.mensage {
+
     margin: auto;
     text-align: justify;
-    h1{
+
+    h1 {
         color: white;
         font-weight: 700;
+        text-align: center;
     }
-    p{
-        font-size: clamp(10px,20px,20px);
-        width: 50vw;
-        min-width: 50vw;
+
+    p {
+        font-size: 20px;
+        width: 40vw;
+        
     }
 }
 
-.image{
+.image {
     width: 250px;
     margin-left: 3rem;
     margin-top: 5rem;
     flex-shrink: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .container{
+        @include PaddingMobile;
+        width: 90%;
+    }
+    .mensage{
+        h1{
+            font-size: 30px;
+        }
+        p{
+            font-size: 17px;
+            width: 85vw;
+        }
+    }
 }

@@ -19,3 +19,10 @@
 .image {
     margin: auto;
 }
+
+@media screen and (max-width: 768px) {
+
+    .image {
+        width: 200px;
+    }
+}
