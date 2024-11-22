@@ -1,0 +1,40 @@
+
+.container{
+    height: 60px;
+    width: 17%;
+    margin-top: 15.25rem;
+    display: flex;
+    justify-content: center; // Alinha horizontalmente ao centro
+    align-items: center;   
+}
+
+.containerImages{
+    margin-top: auto;
+    display: flex;
+}
+.logoFametro img{
+    width: 80px;
+    height: auto;
+}
+
+.flatIcon img{
+    width: 80px;
+    height: 38px;
+    margin-left: 1.5rem;
+}
+@media screen and (max-width: 768px) {
+    .container {
+        width: 35%;
+        margin-top: 9.25rem;
+    }
+    .logoFametro img{
+        width: 200px;
+        height: auto;
+    }
+    
+    .flatIcon img{
+        width: 200px;
+        height: auto;
+        margin-left: 1.5rem;
+    }
+}

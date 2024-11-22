@@ -10,7 +10,7 @@ const Header = () => {
       <div className={Styles.menu}>
         <Link href="#features-section">Educação Ambiental</Link>
         <Link href="#maps-section">Pontos de Coleta</Link>
-        <Link href="/">Sobre</Link>
+        <Link href="#about-us-section">Sobre</Link>
       </div>
     
 

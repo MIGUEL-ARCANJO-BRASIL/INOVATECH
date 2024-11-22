@@ -21,9 +21,18 @@
 }
 
 @media screen and (max-width: 768px) {
- 
+    
+    .text{
+        width: 90%;
+    }
+    .reverse{
+        .image img{
+            margin-right: 10rem;
+        }
+    }
+
     .image img{
-        width: 200px;
+        width: 300px;
         height: auto;
     }
 }

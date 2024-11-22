@@ -12,6 +12,7 @@ import 'swiper/css/pagination';
 import 'swiper/css/effect-fade'
 import Separator from "../components/auxiliars/separator";
 import Maps from "../components/maps/index";
+import Footer from "../components/footer";
 
 
 
@@ -28,7 +29,7 @@ export default function Home() {
       <Separator />
 
       <AboutUs />
-
+      <Footer/>
     </div>
   );
 }

@@ -5,7 +5,7 @@
 .container {
   max-width: 2440px;
   padding: 34px 180px;
-  height: 100px;
+  height: 80px;
   width: 100%;
   background-color: $light-green;
   border-bottom: 0.5px solid;
@@ -14,14 +14,15 @@
   justify-content: space-around;
 
   font-family: "Inter", sans-serif;
-  
+
 }
 
 .menu {
   font-size: 22px;
-  font-weight: 400;
+  font-weight: 300;
   color: $white-color;
   text-decoration: underline;
+
   a+a {
     margin-left: 60px;
   }
@@ -29,12 +30,11 @@
 
 @media screen and (max-width: 768px) {
   .container {
-    @include PaddingMobile
-    
+    @include PaddingMobile;
+    height: 100px;
   }
 
   .menu {
-    font-size: 20px;
-   
+    font-size: 33px;
   }
 }
