@@ -26,7 +26,7 @@ const CardsInfo = ({ title, text, image, reverse, buttonColor, cardtitle, cardte
             </div>
 
             <div className={Styles.image}>
-                <Image src={image} width={400} height={400}  />
+                <Image src={image} width={350} height={350}  id='images'/>
             </div>
         </div>
 

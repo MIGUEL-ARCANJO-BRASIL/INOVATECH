@@ -6,8 +6,8 @@ import Image from "next/image";
 import { SwiperSlide } from "swiper/react";
 import { useState } from "react";
 import { Autoplay, Pagination, Navigation, EffectCards } from 'swiper/modules';
-import Environment from "/public/images/environment.svg";
 import { useRouter } from 'next/router';
+import Logo from "/public/images/logo.png";
 
 const Welcome = () => {
   const router = useRouter();
@@ -40,7 +40,7 @@ const Welcome = () => {
           </button>
         </div>
         <div className={Styles.image}>
-          <Image src={Environment} width={400} height={400} />
+          <Image src={Logo} width={400} height={400} />
         </div>
 
       </div>

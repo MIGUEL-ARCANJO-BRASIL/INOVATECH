@@ -21,8 +21,9 @@
 }
 
 @media screen and (max-width: 768px) {
-
-    .image {
+ 
+    .image img{
         width: 200px;
+        height: auto;
     }
 }

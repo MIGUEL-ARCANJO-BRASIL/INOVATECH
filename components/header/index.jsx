@@ -8,13 +8,11 @@ const Header = () => {
   return (
     <div className={Styles.container}>
       <div className={Styles.menu}>
-        <Link href="/">Home</Link>
-        <Link href="/">Pontos de Coleta</Link>
+        <Link href="#features-section">Educação Ambiental</Link>
+        <Link href="#maps-section">Pontos de Coleta</Link>
         <Link href="/">Sobre</Link>
       </div>
-      <div className={Styles.logotipo}>
-        <h1>Nome do App</h1>
-      </div>
+    
 
     </div>
   );

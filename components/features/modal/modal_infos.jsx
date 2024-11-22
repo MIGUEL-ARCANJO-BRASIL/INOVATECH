@@ -32,7 +32,7 @@ const ModalInfos = ({ title, text, video }) => {
 
                         marginRight: '10px'
                     }} >
-                        <Image src={YoutubeIcon} />
+                        <Image src={YoutubeIcon} height={30} />
 
                     </div>
 
@@ -60,11 +60,11 @@ const ModalInfos = ({ title, text, video }) => {
                             height: '30px',
 
                             marginRight: '10px'
-                        }} 
-                        
+                        }}
+
                         >
 
-                            <Image src={InternetIcon} />
+                            <Image src={InternetIcon}  height={30}/>
 
                         </div>
 

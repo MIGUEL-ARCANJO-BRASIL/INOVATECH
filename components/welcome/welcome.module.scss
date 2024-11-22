@@ -43,7 +43,7 @@
 }
 
 .image {
-  margin: 0 auto;
+  margin-left: 16rem;
 
 }
 
@@ -51,7 +51,7 @@
 
   width: 100%;
   margin: 0 auto;
-  // background-color: #bcbbbb;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -59,7 +59,7 @@
     margin-top: 5rem;
   }
 
-  .text {
+ .text {
     @include PaddingMobile;
 
     h1 {
@@ -73,9 +73,10 @@
 
   }
 
-  .image {
-    width: 200px;
-    margin: 0 auto;
+  .image img{
+    width: 300px;
+    height: auto;
+    margin: auto auto;
   }
 
 

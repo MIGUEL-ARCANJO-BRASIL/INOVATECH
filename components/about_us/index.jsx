@@ -12,7 +12,7 @@ const AboutUs = () =>{
                      Acreditamos que, juntos, podemos fazer a diferença e contribuir para um futuro mais sustentável. Participe dessa jornada com a gente!</p>
             </div>
             <div className={Styles.image}>
-                <Image src={PeopleImage}/>
+                <Image src={PeopleImage} width={300}/>
             </div>
         </div>
     ); 

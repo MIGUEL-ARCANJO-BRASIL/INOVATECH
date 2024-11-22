@@ -1,0 +1,21 @@
+@import "/styles/mixins/colors.scss";
+
+.container {
+    display: flex;
+    margin: 11.25rem auto;
+    height: 700px;
+    background-color: $dark-green;
+    display: flex;
+    width: 90%;
+    border-radius: 30px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+
+}
+
+
+@media screen and (max-width: 768px) {
+    .container {
+        height: 600px;
+
+    }
+}

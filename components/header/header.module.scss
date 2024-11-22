@@ -1,22 +1,27 @@
 @import "/styles/mixins/colors.scss";
 @import "/styles/mixins/padding.scss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 .container {
   max-width: 2440px;
   padding: 34px 180px;
+  height: 100px;
   width: 100%;
   background-color: $light-green;
   border-bottom: 0.5px solid;
   align-items: center;
   display: flex;
   justify-content: space-around;
+
+  font-family: "Inter", sans-serif;
   
 }
 
 .menu {
   font-size: 22px;
-  font-weight: 500;
-
+  font-weight: 400;
+  color: $white-color;
+  text-decoration: underline;
   a+a {
     margin-left: 60px;
   }
@@ -25,14 +30,11 @@
 @media screen and (max-width: 768px) {
   .container {
     @include PaddingMobile
+    
   }
 
   .menu {
-    font-size: 15px;
-    width: 18rem;
-
-    a+a {
-      margin-left: 20px;
-    }
+    font-size: 20px;
+   
   }
 }

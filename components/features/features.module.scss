@@ -11,13 +11,14 @@
     h1 {
         font-size: 60px;
         color: $dark-green;
+        width: 70%;
     }
 
     p {
-        font-size: clamp(17px, 5vw, 35px);
+        font-size: 27px;
         opacity: 0.8;
         height: 475px;
-        width: 80%;
+        width: 70%;
         height: auto;
         text-align: justify;
     }
