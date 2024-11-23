@@ -1,13 +1,16 @@
 .containertext {
     display: flex;
     height: 100%;
-    width: 80%;
+    width: 90%;
     flex-wrap: wrap;
-
     margin: auto auto;
     font-family: "Inter", sans-serif;
     justify-content: center;
-
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  
+    
     h1 {
         margin-top: 1rem;
         font-size: 33px;
@@ -18,14 +21,36 @@
     }
 
     p {
-        width: 100%;
+        width: 95%;
         height: auto;
 
         margin-bottom: 0px;
         text-align: justify;
         margin-top: 10px;
         color: white;
-        font-size: 30px;
+        font-size: 24px;
         font-weight: 700;
+    }
+}
+
+.moreInformation p {}
+
+@media screen and (max-width: 768px) {
+    .containertext {
+        h1 {
+            font-size: 42px;
+        }
+
+        p {
+            font-size: 30px;
+        }
+
+        .moreInformation {
+            p {
+
+                font-size: 10px;
+            }
+        }
+
     }
 }

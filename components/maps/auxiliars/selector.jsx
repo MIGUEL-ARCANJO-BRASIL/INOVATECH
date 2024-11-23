@@ -69,10 +69,10 @@ export default function Selector() {
                 )}
 
             </div>
-
-            <div className={Styles.image}>
+            {selectedBairro == '' ? <div className={Styles.image}>
                 <Image src={Maps} />
-            </div>
+            </div> : null}
+
 
         </div >
     );

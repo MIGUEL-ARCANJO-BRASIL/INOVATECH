@@ -9,15 +9,12 @@ const ModalInfos = ({ title, text, video }) => {
         <div className={Styles.containertext}>
 
             <h1>{title}</h1>
-            <p style={{
-                marginBottom: '0'
-            }}
-            >{text}
-            </p>
-            <div>
+            <p style={{ marginBottom: '0'}}>{text}</p>
 
+            <div style={{marginTop: '1.25rem', marginBottom: '1.25rem'}}>
                 <p>Clique no vídeo e assista a uma explicação rápida ou acesse mais informações detalhadas!</p>
             </div>
+            
             <div style={{
                 display: 'flex',
                 width: '100%',
@@ -64,7 +61,7 @@ const ModalInfos = ({ title, text, video }) => {
 
                         >
 
-                            <Image src={InternetIcon}  height={30}/>
+                            <Image src={InternetIcon} height={30} />
 
                         </div>
 

@@ -51,9 +51,10 @@
 
         li {
             margin-bottom: 15px;
+
             p {
                 font-size: 20px;
-                
+
                 text-align: justify;
             }
 
@@ -69,47 +70,54 @@
 .infoBox a:hover {
     text-decoration: underline;
 }
+
 .infoTitle {
     font-size: 20px;
     font-weight: 700;
     color: black;
     margin-bottom: 10px;
 }
-.image img {
-    width: 100px; 
-    height: auto; 
+.image{
+    margin-top: 25rem;
+    text-align: center;
 }
+.image img {
+    width: 100px;
+    height: auto;
+}
+
 @media screen and (max-width: 768px) {
 
-    .container{
-        margin-top: 1rem;
-        margin-left: 5.25rem;
-    
-        h1{
+    .container {
+        width: 90%;
+        h1 {
             font-size: 50px;
         }
     }
 
 
-    .customSelect{
+    .customSelect {
         margin-top: 0;
         width: 35%;
     }
 
     .infoTitle {
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .infoBox {
+        padding: 5px;
+        margin-top: 10px;
+
         ul {
             li {
                 p {
-                    font-size: 23px;
+                    font-size: 28px;
                     text-align: justify;
                 }
 
                 a {
-                    font-size: 19px;
+                    font-size: 24px;
                     color: #007bff;
                     font-style: italic;
                 }
@@ -120,5 +128,5 @@
     .image img {
         margin-top: 1rem;
     }
-    
+
 }

@@ -3,10 +3,9 @@ import Styles from '../cards_info/cards.module.scss';
 import Modal from '../modal/card_modal';
 import { useState } from 'react';
 
-const CardsInfo = ({ title, text, image, reverse, buttonColor, cardtitle, cardtext }) => {
+const CardsInfo = ({ title, text, image, reverse, buttonColor, obj_data}) => {
 
     const [openModal, setOpenModal] = useState(false);
-
     return (
         <div className={`${Styles.container} ${reverse ? Styles.reverse : ''}`}>
             <div className={Styles.text}>
@@ -20,7 +19,7 @@ const CardsInfo = ({ title, text, image, reverse, buttonColor, cardtitle, cardte
                 </button>
 
                 <div>
-                    <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)} text={cardtext} title={cardtitle} />
+                    <Modal isOpen={openModal} setModalOpen={() => setOpenModal(!openModal)} obj_data={obj_data}/>
 
                 </div>
             </div>
