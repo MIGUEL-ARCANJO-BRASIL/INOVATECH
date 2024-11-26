@@ -8,6 +8,7 @@ import { useState } from "react";
 import { Autoplay, Pagination, Navigation, EffectCards } from 'swiper/modules';
 import { useRouter } from 'next/router';
 import Logo from "/public/images/logo.png";
+import Link from "next/link";
 
 const Welcome = () => {
   const router = useRouter();
@@ -36,6 +37,7 @@ const Welcome = () => {
             Descubra dicas de reciclagem e ações simples para ajudar o meio ambiente.
           </p>
           <button onClick={handleRedirect}>
+  
             Saiba Mais
           </button>
         </div>
